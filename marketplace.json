@@ -1,0 +1,56 @@
+{
+  "$schema": "https://claude.ai/plugins/marketplace-schema.json",
+  "name": "Spec Creator Marketplace",
+  "description": "Plugins for specification creation and product management workflows",
+  "plugins": [
+    {
+      "name": "spec-creator",
+      "description": "Adversarial specification forge using multiple AI reviewer agents to iteratively refine product specifications until consensus",
+      "version": "0.1.0",
+      "author": {
+        "name": "Richard Sahlberg",
+        "url": "https://github.com/RahSwe"
+      },
+      "repository": "https://github.com/RahSwe/spec-creator",
+      "license": "MIT",
+      "keywords": [
+        "specification",
+        "prd",
+        "user-story",
+        "feature-spec",
+        "bug-report",
+        "adversarial-review",
+        "product-management",
+        "claude-code-plugin"
+      ],
+      "features": [
+        "Guided interview mode for spec creation",
+        "5 adversarial reviewer agents",
+        "4 spec templates (Bug, Feature, User Story, PRD)",
+        "Adaptive reviewer selection",
+        "Consensus-driven iteration"
+      ],
+      "commands": [
+        {
+          "name": "forge-spec",
+          "description": "Create a new specification through guided interview and adversarial review"
+        },
+        {
+          "name": "review-spec",
+          "description": "Review and improve an existing specification through adversarial analysis"
+        }
+      ],
+      "agents": [
+        "spec-orchestrator",
+        "devils-advocate",
+        "security-reviewer",
+        "ux-advocate",
+        "tech-feasibility",
+        "edge-case-hunter"
+      ],
+      "skills": [
+        "spec-writing"
+      ]
+    }
+  ]
+}

@@ -38,15 +38,42 @@ Review and improve an existing specification document.
 
 ## Installation
 
-### From GitHub (Recommended)
+### Option 1: Add the Marketplace (Recommended)
 
-Add the plugin directly from GitHub:
+Add this marketplace to your Claude Code settings to browse and install plugins:
+
+1. Open your Claude Code settings file:
+   ```bash
+   # macOS/Linux
+   nano ~/.claude/settings.json
+
+   # Or open with your preferred editor
+   code ~/.claude/settings.json
+   ```
+
+2. Add the marketplace URL to your settings:
+   ```json
+   {
+     "pluginMarketplaces": [
+       "https://raw.githubusercontent.com/RahSwe/spec-creator/main/marketplace.json"
+     ]
+   }
+   ```
+
+3. Restart Claude Code, then install the plugin:
+   ```bash
+   claude /install-plugin spec-creator
+   ```
+
+### Option 2: Direct GitHub Installation
+
+Install the plugin directly from GitHub without adding the marketplace:
 
 ```bash
 claude /install-plugin https://github.com/RahSwe/spec-creator
 ```
 
-Or add it to your Claude Code settings file (`~/.claude/settings.json`):
+Or add it manually to your Claude Code settings file (`~/.claude/settings.json`):
 
 ```json
 {
@@ -56,15 +83,7 @@ Or add it to your Claude Code settings file (`~/.claude/settings.json`):
 }
 ```
 
-### From Claude Code Marketplace
-
-Once published to the marketplace:
-
-```bash
-claude /install-plugin spec-creator
-```
-
-### Local Development
+### Option 3: Local Development
 
 For local testing or development:
 
@@ -77,6 +96,8 @@ claude --plugin-dir /path/to/spec-creator
 After installing, run `/help` in Claude Code to see the new commands:
 - `/forge-spec` - Create a new specification
 - `/review-spec` - Review an existing specification
+
+You can also verify the plugin is loaded by checking for the spec-writing skill when asking questions about writing specifications.
 
 ## Configuration
 
