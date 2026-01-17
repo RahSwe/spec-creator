@@ -1,0 +1,18 @@
+{
+  "name": "spec-creator",
+  "version": "0.1.0",
+  "description": "Adversarial specification forge using multiple AI reviewers to iteratively refine product specifications",
+  "author": {
+    "name": "Richard Sahlberg"
+  },
+  "keywords": [
+    "specification",
+    "prd",
+    "user-story",
+    "feature-spec",
+    "bug-report",
+    "adversarial-review",
+    "product-management"
+  ],
+  "license": "MIT"
+}

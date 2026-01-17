@@ -1,0 +1,4 @@
+.claude/*.local.md
+specs/
+.DS_Store
+*.log
