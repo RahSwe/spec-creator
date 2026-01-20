@@ -1,16 +1,24 @@
 {
-  "$schema": "https://claude.ai/plugins/marketplace-schema.json",
-  "name": "Spec Creator Marketplace",
-  "description": "Plugins for specification creation and product management workflows",
+  "name": "spec-creator-marketplace",
+  "owner": {
+    "name": "Richard Sahlberg",
+    "email": "richard@sahlberg.dev"
+  },
+  "metadata": {
+    "description": "Plugins for specification creation and product management workflows",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
       "name": "spec-creator",
-      "description": "Adversarial specification forge using multiple AI reviewer agents to iteratively refine product specifications until consensus",
+      "source": "https://github.com/RahSwe/spec-creator",
+      "description": "Adversarial specification forge using multiple AI reviewer agents to iteratively refine product specifications until consensus. Features guided interview mode, 5 adversarial reviewers, and 4 spec templates (Bug, Feature, User Story, PRD)",
       "version": "0.1.0",
       "author": {
         "name": "Richard Sahlberg",
-        "url": "https://github.com/RahSwe"
+        "email": "richard@sahlberg.dev"
       },
+      "homepage": "https://github.com/RahSwe/spec-creator",
       "repository": "https://github.com/RahSwe/spec-creator",
       "license": "MIT",
       "keywords": [
@@ -20,37 +28,9 @@
         "feature-spec",
         "bug-report",
         "adversarial-review",
-        "product-management",
-        "claude-code-plugin"
+        "product-management"
       ],
-      "features": [
-        "Guided interview mode for spec creation",
-        "5 adversarial reviewer agents",
-        "4 spec templates (Bug, Feature, User Story, PRD)",
-        "Adaptive reviewer selection",
-        "Consensus-driven iteration"
-      ],
-      "commands": [
-        {
-          "name": "forge-spec",
-          "description": "Create a new specification through guided interview and adversarial review"
-        },
-        {
-          "name": "review-spec",
-          "description": "Review and improve an existing specification through adversarial analysis"
-        }
-      ],
-      "agents": [
-        "spec-orchestrator",
-        "devils-advocate",
-        "security-reviewer",
-        "ux-advocate",
-        "tech-feasibility",
-        "edge-case-hunter"
-      ],
-      "skills": [
-        "spec-writing"
-      ]
+      "category": "productivity"
     }
   ]
 }
