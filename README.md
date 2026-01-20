@@ -43,7 +43,7 @@ Review and improve an existing specification document.
 Install the plugin directly in Claude Code:
 
 ```bash
-claude /install-plugin https://github.com/RahSwe/spec-creator
+/plugin add RahSwe/spec-creator
 ```
 
 That's it! The plugin is now installed and ready to use.
@@ -55,27 +55,23 @@ You can also add the plugin manually to your Claude Code settings file (`~/.clau
 ```json
 {
   "plugins": [
-    "https://github.com/RahSwe/spec-creator"
+    "RahSwe/spec-creator"
   ]
 }
 ```
 
-### Alternative: Add Marketplace
+### Alternative: Add via Marketplace
 
-To browse this and future plugins from a marketplace:
+To browse plugins from the marketplace:
 
-1. Add to your `~/.claude/settings.json`:
-   ```json
-   {
-     "pluginMarketplaces": [
-       "https://raw.githubusercontent.com/RahSwe/spec-creator/main/marketplace.json"
-     ]
-   }
+1. Add the marketplace:
+   ```bash
+   /plugin marketplace add RahSwe/spec-creator
    ```
 
 2. Then install by name:
    ```bash
-   claude /install-plugin spec-creator
+   /plugin install spec-creator@spec-creator
    ```
 
 ### Local Development
@@ -83,7 +79,7 @@ To browse this and future plugins from a marketplace:
 For local testing or development:
 
 ```bash
-claude --plugin-dir /path/to/spec-creator
+cc --plugin-dir /path/to/spec-creator
 ```
 
 ### Verify Installation
