@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "spec-creator",
-      "source": "https://github.com/RahSwe/spec-creator",
+      "source": ".",
       "description": "Adversarial specification forge using multiple AI reviewer agents to iteratively refine product specifications until consensus. Features guided interview mode, 5 adversarial reviewers, and 4 spec templates (Bug, Feature, User Story, PRD)",
       "version": "0.1.0",
       "author": {
